@@ -1,3 +1,5 @@
+ document.getElementById("currentYear").textContent = new Date().getFullYear();
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
@@ -109,5 +111,6 @@ function scrollActive() {
         }
     })
 }
+
 
 window.addEventListener('scroll', scrollActive)
