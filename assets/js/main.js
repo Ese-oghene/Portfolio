@@ -1,11 +1,16 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
+    var menuIcon = document.getElementById("menu-icon");
 
     if (menuBtn.className === "nav-menu") {
         menuBtn.className += " responsive";
+        menuIcon.classList.remove("uil-bars");
+        menuIcon.classList.add("uil-times");
     } else{
-        menuBtn.className = "nav-menu"
+        menuBtn.className = "nav-menu";
+        menuIcon.classList.remove("uil-times");
+        menuIcon.classList.add("uil-bars");
     }
 }
 
@@ -31,7 +36,7 @@ function headerShadow(){
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-    strings : ["Designer", "Youtuber", "Developer"],
+    strings : ["Designer", "YouTuber", "Developer"],
     loop : true,
     typeSpeed : 100,
     backSpeed : 80,
